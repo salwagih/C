@@ -6,7 +6,8 @@
    
    string s = get_string("Input: ");
    printf("output :");
-   for (i = 0; i < strlen(s); i++)
+   
+   for (i = 0, n = strlen(s); i < n; i++)
    {
      printf("%c" , s[i]);
    }
