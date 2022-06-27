@@ -22,6 +22,8 @@ temp[i] = list[i];
 
 
 temp[3] = 4;
+  
+free(list);
 
 list = temp;
 
@@ -34,3 +36,9 @@ free(list);
 return 0;
 
 }
+
+//or 
+
+
+int *temp = realloc(list , 4 * sizeof(int));
+
